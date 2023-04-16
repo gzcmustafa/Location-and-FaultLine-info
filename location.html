@@ -1,0 +1,34 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Konum ve Fay Hattı</title>
+    <!-- Konumunuzu tespit etmek için kullanılacak JavaScript API'sini içeri aktarma -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeexNM-suHhK7jJYZDGnbNVXN-_YMsTiE&libraries=places"></script>
+    <!-- Fay hatları verilerini yüklemek için kullanılacak JavaScript API'sini içeri aktarma -->
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+    <!-- harita için css dosyası  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" />
+	  <link rel="stylesheet" href="location.css">
+    <script src="location.js"></script>
+    <style>
+      
+      #map {
+        height: 500px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Konumunuzun Fay Hattına Uzaklığını Hesaplayın</h1>
+    <p></p>
+    <!-- Konum tespit etmek için kullanılacak buton -->
+    <button onclick="getLocation()" >Konum Bul</button>
+    <!-- Harita kutusu -->
+    <div id="map"></div>
+   
+
+            
+           </body>
+           </html>
+          
